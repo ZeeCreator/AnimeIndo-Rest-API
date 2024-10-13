@@ -17,9 +17,9 @@ app.use(cors(corsOptions));
 // app.use("/otakudesu", otakudesu);
 app.use("/animeindo", animeIndo);
 app.use("/luckyanime", kuramanime);
-app.use('/otakudesu", otakudesu);
+//app.use('/otakudesu", otakudesu);
 
 app.get("/", (req, res) => {
-  res.send("Welcome To Lucky Anime Rest API");
+  res.send("Welcome To Lucky Anime Rest API (/kuramanime, /animeindo)");
 });
 app.listen(port, () => console.log("Server listen on port " + port));
